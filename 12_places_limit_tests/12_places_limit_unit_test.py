@@ -37,3 +37,15 @@ def test_create_competition(mocker):
                       "date": "2022-06-09 10:00:00",
                       "numberOfPlaces": "50"}
     assert create_competition() == expected_value
+
+
+def test_should_load_clubs():
+    club = ClubMockResponse.get_info()
+    list_of_clubs = [club]
+    return list_of_clubs
+
+
+def test_should_load_competitions():
+    competition = CompetitionMockResponse.get_info()
+    list_of_competitions = [competition]
+    return list_of_competitions
