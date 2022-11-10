@@ -49,3 +49,7 @@ def test_should_load_competitions():
     competition = CompetitionMockResponse.get_info()
     list_of_competitions = [competition]
     return list_of_competitions
+
+
+clubs = test_should_load_clubs()
+competitions = test_should_load_competitions()
